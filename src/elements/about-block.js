@@ -71,6 +71,21 @@ class AboutBlock extends ReduxMixin(PolymerElement) {
         <div>
           <h1 class="container-title">{$ aboutBlock.title $}</h1>
           <p>{$ aboutBlock.callToAction.featuredSessions.description $}</p>
+          <ul style="list-style-type:square;">
+          <li>{$ aboutBlock.callToAction.featuredSessions.description2 $}</li>
+          <li>{$ aboutBlock.callToAction.featuredSessions.description3 $}</li>
+          <li>{$ aboutBlock.callToAction.featuredSessions.description4 $}
+          <ul>
+          <li>{$ aboutBlock.callToAction.featuredSessions.description5 $}</li>
+          </ul>
+          </li>
+          <li>{$ aboutBlock.callToAction.featuredSessions.description6 $}
+          <ul>
+          <li>{$ aboutBlock.callToAction.featuredSessions.description7 $}</li>
+          </ul>
+          </li>
+          <li>{$ aboutBlock.callToAction.featuredSessions.description8 $}</li>
+          </ul>
           <a
             href="{$ aboutBlock.callToAction.featuredSessions.link $}"
             ga-on="click"
