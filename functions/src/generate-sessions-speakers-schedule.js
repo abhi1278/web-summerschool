@@ -20,11 +20,11 @@ export const scheduleWrite = functions.firestore
       );
       return null;
     }
-    // if (scheduleConfig.enabled === 'true') {
-    //   return generateAndSaveData();
-    // }
-    console.log("Writing data to schedule"+ scheduleConfig.enabled );
-    return generateAndSaveData();;
+    if (scheduleConfig.enabled === 'true') {
+      return generateAndSaveData();
+    }
+    
+    return null;
   });
 
 export const speakersWrite = functions.firestore
