@@ -5,9 +5,6 @@
   "scripts": {
     "build": "npm run clean && cross-env NODE_ENV=production rollup -c rollup.config.js",
     "clean": "rimraf dist",
-    "deploy": "npm run build && cross-env NODE_ENV=production firebase deploy",
-    "firestore:copy": "babel-node ./internals/firestore-copy-data",
-    "firestore:init": "firebase firestore:delete -r --all-collections -y && firebase functions:config:set schedule.enabled=true && firebase deploy --except hosting && babel-node ./internals/import-default-data",
     "install:emulator": "firebase setup:emulators:firestore",
     "install:functions": "npm --prefix ./functions install",
     "lint:fix": "eslint . --fix",
