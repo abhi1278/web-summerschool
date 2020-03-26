@@ -1,0 +1,16 @@
+{
+  "basepath": "/",
+  "url": "https://ss2020-7242a.firebaseapp.com/",
+  "analytics": "UA-43643469-8",
+  "prefix": "/",
+  "firebase": {
+    "apiKey": "AIzaSyD1a4Xe7DPkh8dJrMrIbLGntxBS8bfaz60",
+    "appId": "1:942884972008:web:19ddb632275841e7bbf05d",
+    "authDomain": "ss2020-7242a.firebaseapp.com",
+    "databaseURL": "https://ss2020-7242a.firebaseio.com",
+    "messagingSenderId": "942884972008",
+    "projectId": "ss2020-7242a",
+    "storageBucket": "ss2020-7242a.appspot.com"
+  },
+  "googleMapApiKey": "AIzaSyBTb5V0QOQ-ZQF9DxjVPtboZ3Ol7f5q1Kk"
+}
