@@ -34,8 +34,34 @@ class AboutBlock extends ReduxMixin(PolymerElement) {
         .numbers {
           font-size: 40px;
         }
-      }
-
+      
+        .numbers::after {
+          content: "";
+          display: block;
+          height: 2px;
+          width: 64px;
+          background-color: var(--default-primary-color);
+        }
+  
+        .label {
+          margin-top: 4px;
+        }
+  
+        @media (min-width: 640px) {
+          .content {
+            grid-gap: 64px;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+          }
+  
+          .statistics-block {
+            grid-gap: 32px;
+          }
+  
+          .numbers {
+            font-size: 56px;
+          }
+        }
+  
     </style>
 
     <div class="container">
@@ -85,44 +111,10 @@ class AboutBlock extends ReduxMixin(PolymerElement) {
             <span>{$  aboutBlock.callToAction.howItWas.label $}</span>
             <iron-icon icon="hoverboard:arrow-right-circle"></iron-icon>
           </paper-button>
-        </div>
-    }    
-    }
-      </style>
+        </div>   
+    
+      
 
-      <div class="container">
-        <div class="content">
-          <div>
-            <h1 class="container-title">{$ aboutBlock.title $}</h1>
-            <p>{$ aboutBlock.callToAction.featuredSessions.description $}</p>
-            <a
-              href="{$ aboutBlock.callToAction.featuredSessions.link $}"
-              ga-on="click"
-              ga-event-category="video"
-              ga-event-action="watch"
-              ga-event-label="about block - {$ aboutBlock.callToAction.featuredSessions.label $}"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <paper-button class="animated icon-right">
-                <span class="cta-label">{$ aboutBlock.callToAction.featuredSessions.label $}</span>
-                <iron-icon icon="hoverboard:arrow-right-circle"></iron-icon>
-              </paper-button>
-            </a>
-
-            <p>{$ aboutBlock.callToAction.howItWas.description $}</p>
-            <paper-button
-              class="animated icon-right"
-              on-tap="_playVideo"
-              ga-on="click"
-              ga-event-category="video"
-              ga-event-action="watch"
-              ga-event-label="about block - {$ aboutBlock.callToAction.howItWas.label $}"
-            >
-              <span>{$ aboutBlock.callToAction.howItWas.label $}</span>
-              <iron-icon icon="hoverboard:arrow-right-circle"></iron-icon>
-            </paper-button>
-          </div>
 
           <div class="statistics-block">
             <div class="item">
