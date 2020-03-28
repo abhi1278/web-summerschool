@@ -1,9 +1,9 @@
 {
-  "title": "Summer School 2020 Dev",
+  "title": "GDG DevFest Season 2018",
   "description": "Join the commuity, learn new things!",
   "image": "images/social-share.jpg",
-  "keywords": "event, mittaltech, website, summer, events, programming, android, chrome, polymer, developers, web, cloud, androiddev, hyderabad, school, training",
-  "dates": "June 01-07, 2020",
+  "keywords": "event, gdg, gde, devfest, google, programming, android, chrome, polymer, developers, web, cloud, androiddev",
+  "dates": "October 12-13, 2018",
   "partnershipProposition": "https://bit.ly/dfua17-partners",
   "share": "Share",
   "followOur": "Follow our",
@@ -152,15 +152,15 @@
       },
       "days": {
         "label": "Days",
-        "number": "7"
+        "number": "2"
       },
       "sessions": {
         "label": "Sessions",
-        "number": "15"
+        "number": "50"
       },
       "tracks": {
         "label": "Tracks",
-        "number": "3"
+        "number": "4"
       }
     }
   },
