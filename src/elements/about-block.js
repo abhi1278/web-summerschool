@@ -86,33 +86,8 @@ class AboutBlock extends ReduxMixin(PolymerElement) {
             <iron-icon icon="hoverboard:arrow-right-circle"></iron-icon>
           </paper-button>
         </div>
-
-        .numbers::after {
-          content: '';
-          display: block;
-          height: 2px;
-          width: 64px;
-          background-color: var(--default-primary-color);
-        }
-
-        .label {
-          margin-top: 4px;
-        }
-
-        @media (min-width: 640px) {
-          .content {
-            grid-gap: 64px;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-          }
-
-          .statistics-block {
-            grid-gap: 32px;
-          }
-
-          .numbers {
-            font-size: 56px;
-          }
-        }
+    }    
+    }
       </style>
 
       <div class="container">
