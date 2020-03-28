@@ -31,12 +31,12 @@ function sessionsSpeakersScheduleMap(sessionsRaw, speakersRaw, scheduleRaw) {
           const endTime =
             subSessionsLen > 1
               ? getEndTime(
-                dayKey,
-                timeslot.startTime,
-                endTimeRaw,
-                subSessionsLen,
-                subSessionIndex + 1
-              )
+                  dayKey,
+                  timeslot.startTime,
+                  endTimeRaw,
+                  subSessionsLen,
+                  subSessionIndex + 1
+                )
               : endTimeRaw;
           const startTime =
             subSessionsLen > 1 && subSessionIndex > 0
@@ -59,16 +59,16 @@ function sessionsSpeakersScheduleMap(sessionsRaw, speakersRaw, scheduleRaw) {
             dateReadable: day.dateReadable,
             speakers: subsession.speakers
               ? subsession.speakers.map((speakerId) =>
-                Object.assign(
-                  {
-                    id: speakerId,
-                  },
-                  speakersRaw[speakerId],
-                  {
-                    sessions: null,
-                  }
+                  Object.assign(
+                    {
+                      id: speakerId,
+                    },
+                    speakersRaw[speakerId],
+                    {
+                      sessions: null,
+                    }
+                  )
                 )
-              )
               : [],
           });
 
@@ -88,9 +88,9 @@ function sessionsSpeakersScheduleMap(sessionsRaw, speakersRaw, scheduleRaw) {
           sessionsLen !== 1
             ? sessionIndex + 2
             : Object.keys(extensions).length
-              ? Object.keys(extensions)[0]
-              : tracksNumber + 1
-          }`;
+            ? Object.keys(extensions)[0]
+            : tracksNumber + 1
+        }`;
 
         if (timeslot.sessions[sessionIndex].extend) {
           extensions[sessionIndex + 1] = timeslot.sessions[sessionIndex].extend;
