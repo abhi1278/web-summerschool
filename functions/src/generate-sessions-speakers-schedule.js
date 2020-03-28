@@ -23,7 +23,6 @@ export const scheduleWrite = functions.firestore
     if (scheduleConfig.enabled === 'true') {
       return generateAndSaveData();
     }
-    
     return null;
   });
 
